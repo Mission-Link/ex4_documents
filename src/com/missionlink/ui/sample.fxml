@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<BorderPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.missionlink.ui.Controller">
+    <center>
+        <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="458.0" prefWidth="601.0">
+            <children>
+                <Button fx:id="inputButton" layoutX="356.0" layoutY="72.0" mnemonicParsing="false"
+                        onAction="#handleInputButtonClick" text="Input"/>
+                <TextField fx:id="textField" layoutX="197.0" layoutY="72.0" promptText="input licence key"/>
+                <Button fx:id="openButton" layoutX="153.0" layoutY="127.0" minHeight="20.0" minWidth="50.0"
+                        mnemonicParsing="false" onAction="#openButtonPressed" text="Open"/>
+                <Button fx:id="editButton" layoutX="263.0" layoutY="127.0" minHeight="20.0" minWidth="50.0"
+                        mnemonicParsing="false" onAction="#editButtonPressed" text="Edit"/>
+                <Button fx:id="saveButton" layoutX="370.0" layoutY="127.0" minHeight="20.0" minWidth="50.0"
+                        mnemonicParsing="false" onAction="#saveButtonPressed" text="Save"/>
+                <Label layoutX="236.0" layoutY="191.0" text="Version:"/>
+                <Label fx:id="versionLabel" layoutX="286.0" layoutY="191.0"/>
+                <TextArea fx:id="textArea" layoutX="156.0" layoutY="236.0" prefHeight="150.0" prefWidth="288.0"/>
+            </children>
+        </Pane>
+    </center>
+</BorderPane>
